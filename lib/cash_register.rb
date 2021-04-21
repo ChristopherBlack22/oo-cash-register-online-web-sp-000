@@ -1,3 +1,4 @@
+require "pry"
 class CashRegister
   
   attr_accessor :total, :discount 
@@ -12,8 +13,8 @@ class CashRegister
   end 
   
   def apply_discount
-    #(@total.to_f/100) * (100-@discount)
-    100-@discount 
+    (@total.to_f/100) * (100-@discount)
+    binding.pry
   end 
   
 end 
